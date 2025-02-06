@@ -40,8 +40,6 @@
         <h1>Chai and Chit Chat<span>.</span></h1>
       </a>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
 
     </div>
@@ -134,7 +132,7 @@
 
         <div class="section-header">
           <h2>Womens Groups</h2>
-          <p>The C3 membership is divided up into a variety of small groups focused around a specific area of interest.</p>
+          <div id="target-section">The C3 membership is divided up into a variety of small groups focused around a specific area of interest.</div>
         </div>
 
         <div class="row gy-4">
@@ -145,36 +143,26 @@
                     </div>
                     <h3>Pregnant Mom's</h3>
                     <p>Supporting Moms as they start on the adventure.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
+                    <button class="readmore stretched-link openModal" data-target="Pregnant Moms" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
                 </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-baby"></i>
-                    </div>
-                    <h3>Moms with Infants 0-3 years</h3>
-                    <p>No sleep, Diapers and the tendency to use baby talk. Who woundnt need a group to share the pain.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item -->  
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
                         <i class="fa-solid fa-child"></i>
                     </div>
-                    <h3>Moms with kids 4 to 8 years</h3>
+                    <h3>Moms with kids</h3>
                     <p>Why, Why, Why, Why Because we said so.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
+                    <button class="readmore stretched-link openModal" data-target="Moms with kids" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
-                        <i class="fa-solid fa-pizza-slice"></i>
+                        <i class="fa-solid fa-sun"></i>
                     </div>
-                    <h3>Moms with boys 8 to 17 years</h3>
-                    <p>Let the fun begin, finally old enough to let mom take some time to hang with the girls.</p>
+                    <h3>Rise & shine(18-25)</h3>
+                    <p>A group a young ladies who like to just hang out, hopefully</p>
                     <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
                 </div>
             </div><!-- End Service Item -->
@@ -183,8 +171,8 @@
                     <div class="icon">
                         <i class="fa-solid fa-camera"></i>
                     </div>
-                    <h3>Moms with girl's 8 to 17 years</h3>
-                    <p>Finally old enough to shop. Let the Drama begin.</p>
+                    <h3>Young ladies(25-30)</h3>
+                    <p>Also a group of ladies that hang out</p>
                     <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
                 </div>
             </div><!-- End Service Item -->
@@ -193,28 +181,70 @@
                     <div class="icon">
                         <i class="fa-solid fa-smile-beam"></i>
                     </div>
-                    <h3>Moms with adult kids</h3>
-                    <p>They are out of the house ... now what do I do?</p>
+                    <h3>Young & Social</h3>
+                    <p>We have more time on our hands... Maybe</p>
                     <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
                 </div>
             </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
-                        <i class="fa-solid fa-music"></i>
+                      <span class="fa-layers fa-fw">
+                        <i class="fas fa-star"></i>
+                      </span>
                     </div>
-                    <h3>Karoake</h3>
-                    <p>Meets up once a month to sing our hearts out. Occasionally we even do it in tune</p>
+                    <h3>Fabulous 50's</h3>
+                    <p>We are Fabulous As always</p>
                     <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
                 </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                  <div class="icon">
+                      <i class="fas fa-cloud-moon"></i>
+                  </div>
+                  <h3>Fabulous 60's</h3>
+                  <p>Because we finally have the money to do what we want.</p>
+                  <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
+              </div>
+          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                  <div class="icon">
+                      <i class="fa-solid fa-person"></i>
+                  </div>
+                  <h3>Single moms</h3>
+                  <p>Single and free to do what we enjoy.</p>
+                  <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                  <div class="icon">
+                      <i class="fa-solid fa-house"></i>
+                  </div>
+                  <h3>Stay at home moms</h3>
+                  <p>Cause stay at home doesnt actually mean stay at HOME</p>
+                  <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
+              </div>
+          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                  <div class="icon">
+                      <i class="fa-solid fa-blind"></i>
+                  </div>
+                  <h3>Golden Gems</h3>
+                  <p>Because when the Inlaws come to visit, it's nice to get them out of my house for a bit.</p>
+                  <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
+              </div>
             </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
                         <i class="fa-solid fa-highlighter"></i>
                     </div>
-                    <h3>Crafts</h3>
-                    <p>Painting Finger Nails is a craft right?</p>
+                    <h3>Hobbies</h3>
+                    <p>Almost anything you can imagine</p>
                     <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
                 </div>
             </div><!-- End Service Item -->
@@ -223,161 +253,164 @@
                     <div class="icon">
                         <i class="fa-solid fa-plane"></i>
                     </div>
-                    <h3>Travel</h3>
-                    <p>Who you travel with can be more important than your destination.</p>
+                    <h3>Location Based groups</h3>
+                    <p>Where ever you are there is a group for you, except if you are not around the Dallas area</p>
                     <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
                 </div>
             </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-bug"></i>
-                    </div>
-                    <h3>Garden</h3>
-                    <p>Dirt under your nails isn't always bad.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                    <h3>Single Mom's</h3>
-                    <p>Not sure how we find time to meet but join us and we'll figure it out.'</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-female"></i>
-                    </div>
-                    <h3>Dance</h3>
-                    <p>From Hollywood to Bollywood and everything in between.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-book"></i>
-                    </div>
-                    <h3>Book Club</h3>
-                    <p>We really arent as boring as everyone thinks we are.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-people-carry"></i>
-                    </div>
-                    <h3>Social Work</h3>
-                    <p>Someone has to figure out how to stop the madness.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-running"></i>
-                    </div>
-                    <h3>Fun and Fitness</h3>
-                    <p>Fitness is more fun when you have someone else to harrass.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-pepper-hot"></i>
-                    </div>
-                    <h3>Cooking</h3>
-                    <p>Something everyone does but few do well. Up your skills with the Girls of C3</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-                    <h3>Stay at home moms</h3>
-                    <p>Cause stay at home doesnt actually mean stay at HOME</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-baby-carriage"></i>
-                    </div>
-                    <h3>Infertility Support</h3>
-                    <p>Life can be hard but its still better with friends.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-money-bill"></i>
-                    </div>
-                    <h3>Fabulous Fifties and Beyond</h3>
-                    <p>Because we finally have the money to do what we want.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-blind"></i>
-                    </div>
-                    <h3>Golden Jewels</h3>
-                    <p>Because when the Inlaws come to visit, it's nice to get them out of my house for a bit.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <h3>Special Needs Lovelies</h3>
-                    <p>Life can be hard but its still better with friends.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-trophy"></i>
-                    </div>
-                    <h3>Card Games</h3>
-                    <p>We'd join fun and fitness but this is more relaxing.'</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-person"></i>
-                    </div>
-                    <h3>Singlets</h3>
-                    <p>Single and free to do what we enjoy.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-birthday-cake"></i>
-                    </div>
-                    <h3>Monthly Birthday groups</h3>
-                    <p>1 group for each month so we can go out and celebrate together.</p>
-                    <!--<a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>-->
-                </div>
-            </div><!-- End Service Item -->
+<div id="Pregnant Moms" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <div style="text-align: center;"><h2>Pregnant Moms</h2></div>
+    
+      <p>Are you expecting a little one and looking for a supportive community to share this special journey? C3 Pregnant Moms is here to guide and uplift you through every stage of pregnancy. From first-trimester questions to nesting tips, this group offers a warm environment to swap experiences, gain practical advice, and celebrate milestones—no matter how big or small.
+        What’s in Store</p>
+        <p>Resource Sharing: Discuss prenatal care, nutrition, exercise, and more.</p>
+        <p>Encouragement & Advice: Get firsthand tips from fellow moms who understand the joys (and jitters) of pregnancy.</p>
+        <p>Friendly Meetups: Bond over shared experiences through casual gatherings—whether in person or virtual.</p>
+        <p>Join C3 Pregnant Moms and experience the comfort of a supportive circle that grows with you—from bump to baby!</p>
+  </div>
+</div>
+
+<div id="Moms with kids" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <div style="text-align: center;"><h2>Moms with kids</h2></div>
+      <h5>C3 Infant Moms</h5>
+      <h5>Little C3 Moms (3–8 Years)</h5>
+      <h5>C3 Middle School Girls (6th–8th Grade)</h5>
+      <h5>C3 High School Girls Moms Group</h5>
+      <h5>C3 Boys (Grades 3, 4, & 5)</h5>
+      <h5>C3 Boys (Grades 6, 7, & 8)</h5>
+      <h5>C3 Boys (Grades 9–12)</h5>
+      <p></p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>A step forward and a step back</h2>
+      <p>:[</p>
+  </div>
+</div>
+<!-- CSS Styles -->
+<style>
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+  }
+
+  .modal.show {
+      display: block;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Adjust as needed */
+    max-width: 1000px; /* Optional for responsive design */
+    margin: 15% auto; /* Center vertically */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  .close {
+      color: red;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  .close:hover {
+      color: darkred;
+  }
+</style>
+
+<!-- JavaScript Functionality -->
+<script>
+document.querySelectorAll('.openModal').forEach(button => {
+    button.addEventListener('click', function() {
+        const targetModalId = this.getAttribute('data-target');
+        const modal = document.getElementById(targetModalId);
+        if (modal) {
+            modal.classList.add('show');
+        }
+    });
+});
+
+document.querySelectorAll('.modal .close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function() {
+        this.closest('.modal').classList.remove('show');
+    });
+});
+
+window.addEventListener('click', function(event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) {
+            modal.classList.remove('show');
+        }
+    });
+});
+
+
+  // Open modal
+  openModalButtons.forEach(button => {
+      button.addEventListener("click", function(event) {
+          const modalId = this.getAttribute("data-target");
+          const modal = document.getElementById(modalId);
+          const modalContent = modal.querySelector(".modal-content");
+          const buttonRect = this.getBoundingClientRect();
+
+          modal.classList.add("show");
+
+          // Align modal with button
+          modalContent.style.top = `${buttonRect.top + window.scrollY}px`;
+      });
+  });
+
+  // Close modal on 'x' click
+  closeButtons.forEach(button => {
+      button.addEventListener("click", function() {
+          this.closest('.modal').classList.remove("show");
+          document.body.style.overflow = 'auto'; // Re-enable background scroll
+      });
+  });
+
+  // Close modal when clicking outside the modal content
+  window.addEventListener("click", function(event) {
+      modals.forEach(modal => {
+          if (event.target === modal) {
+              modal.classList.remove("show");
+              document.body.style.overflow = 'auto'; // Re-enable background scroll
+          }
+      });
+  });
+</script>
 
 
         </div>
