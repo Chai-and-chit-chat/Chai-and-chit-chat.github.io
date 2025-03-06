@@ -2,9 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .fade {
+          opacity: 1;
+          transition: opacity 0.5s ease;
+      }
+      .hidden {
+          display: none; /* Hide elements completely */
+      }
+      .container {
+          margin-top: 10px;
+      }
+  </style>
   <title>Chai and Chit Chat</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -29,22 +40,6 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Chai and Chit Chat<span>.</span></h1>
-      </a>
-
-
-
-    </div>
-  </header><!-- End Header -->
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
 
@@ -54,7 +49,7 @@
             <div class="col-lg-6 text-center">
                 <h2 data-aos="fade-down">Welcome to <span>C3</span></h2>
                 <h3 data-aos="fade-down">North Dallas</h3>
-                <p data-aos="fade-up">Chai and chit chat started in the wake of the pandemic. After months of being home alone a group decided to get together for chai at a local restaurant. What came out of that was a desire to start a community where South Asians help and support one another as they try to navigate life in a world gone mad.</p>
+                <p data-aos="fade-up">Chai and Chit Chat started in the wake of the pandemic. After months of being home alone, a group decided to get together for chai at a local restaurant. What came out of that was a desire to start a community where South Asian ladies help and support one another as they try to navigate life.</p>
                 <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">About us</a>
             </div>
         </div>
@@ -68,14 +63,6 @@
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
 
     </div>
 
@@ -92,16 +79,16 @@
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
               <div class="content">
                   <h3>About Chai and Chit Chat (C3)</h3>
-                  <p>Chai and Chit Chat (C3) is more than a community—it’s a movement of connection, celebration, and empowerment for Desi women in North Dallas and beyond. Founded in 2021 by the visionary Mercy Strickland, C3 began as a simple potluck gathering and has since blossomed into a thriving 501(c)(3) nonprofit organization with over 5,000 members and nearly 60 subgroups.</p>
+                  <p>Chai and Chit Chat (C3) is more than a community—it’s a movement of connection, celebration, and empowerment for Desi women in North Dallas and beyond. Founded in 2021 by the visionary Mercy Strickland, C3 began as a simple potluck gathering and has since blossomed into a thriving 501(c)(3) nonprofit organization with over 6,000 members and nearly 70 subgroups.</p>
                   <p>At C3, we believe in the power of shared experiences and collective growth. Guided by our motto—“Fostering Friendship, Building Community, and Uplifting Together”—we bring together women from diverse backgrounds to share their passions, navigate challenges, and celebrate life’s milestones.</p>
                   <h4>What We Offer</h4>
                   <p>C3 is a welcoming space where women can:</p>
-                  <p>1. Explore interests through dedicated subgroups, including cooking, fitness, travel, crafts, social work, dance, and karaoke.</p>
-                  <p>2. Find support and solidarity in specialized groups for single moms, soul sisters, and job seekers</p>
+                  <p>1. Explore interests through dedicated subgroups, including cooking, fitness, travel, crafts, social work, dance, and karaoke, etc.</p>
+                  <p>2. Find support and solidarity in specialized groups for single moms, soul sisters, and job seekers.</p>
                   <p>3. Build lasting connections through vibrant events, activities, and meetups.</p>
                   <p>With no membership fees and a commitment to inclusivity, C3 ensures that every Desi woman has a place to belong and thrive.</p>
                   <h4>Our Leadership</h4>
-                  <p>Mercy Strickland’s compassionate leadership has been the driving force behind C3’s success. Her journey, marked by a courageous move across the Atlantic, is a testament to her commitment to creating a safe haven for Desi women in a foreign land. Beyond her organizational efforts, Mercy discreetly supports women facing domestic challenges, offering them the resources and empowerment to reclaim their lives.</p>
+                  <p>Mercy Strickland’s compassionate leadership has been the driving force behind C3’s success. Her journey, marked by a courageous move across the Atlantic, is a testament to her commitment to creating a safe haven for Desi women in a foreign land. Beyond her organizational efforts, Mercy supports women facing domestic challenges, offering them the resources and empowerment to reclaim their lives.</p>
                   <h4>Our Vision</h4>
                   <p>C3 is built on the belief that small, meaningful actions can create powerful transformations. We aim to foster a legacy of friendship, support, and empowerment for generations of desi women to come. At C3, we’re turning dreams into realities, challenges into triumphs, and connections into lifelong bonds.</p>
                   <p>Join us as we continue to grow, inspire, and uplift—together.</p>
@@ -139,51 +126,61 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
-                        <i class="fa-solid fa-person-pregnant"></i>
+                        <i class="fa-solid fa-sun"></i>
                     </div>
-                    <h3>Pregnant Mom's</h3>
-                    <p>Supporting Moms as they start on the adventure.</p>
-                    <button class="readmore stretched-link openModal" data-target="Pregnant Moms" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
+                    <h3>Main Groups</h3>
+                    <p>The Central Groups Of C3</p>
+                    <button class="readmore stretched-link openModal" onclick="showDivs('div1')">Learn more <i class="bi bi-arrow-right"></i></button>
                 </div>
-            </div><!-- End Service Item -->  
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                  <div class="icon">
+                      <i class="fa-solid fa-plane"></i>
+                  </div>
+                  <h3>Location Based Groups</h3>
+                  <p>Groups Based of Location, hence the name</p>
+                  <button class="readmore stretched-link openModal" onclick="showDivs('div2')">Learn more <i class="bi bi-arrow-right"></i></button>
+              </div>
+          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                    <div class="icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3>Health and Fitness Groups</h3>
+                    <p>Fitness is more fun when you have people to do it with</p>
+                    <button class="readmore stretched-link openModal" onclick="showDivs('div3')">Learn more <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
                         <i class="fa-solid fa-child"></i>
                     </div>
-                    <h3>Moms with kids</h3>
-                    <p>Why, Why, Why, Why Because we said so.</p>
-                    <button class="readmore stretched-link openModal" data-target="Moms with kids" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
+                    <h3>Moms and Kids Groups</h3>
+                    <p>Why, Why, Why, Why, Because we said so </p>
+                    <button class="readmore stretched-link openModal" onclick="showDivs('div4')">Learn more <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-sun"></i>
-                    </div>
-                    <h3>Rise & shine(18-25)</h3>
-                    <p>A group a young ladies who like to just hang out, hopefully</p>
-                    <button class="readmore stretched-link openModal" data-target="error" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-camera"></i>
-                    </div>
-                    <h3>Young ladies(25-30)</h3>
-                    <p>Also a group of ladies that hang out</p>
-                    <button class="readmore stretched-link openModal" data-target="error" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-                </div>
-            </div><!-- End Service Item -->
+              <div class="service-item  position-relative">
+                  <div class="icon">
+                      <i class="fa-solid fas fa-female"></i>
+                  </div>
+                  <h3>Young Ladies</h3>
+                  <p>For those that want to be independent</p>
+                  <button class="readmore stretched-link openModal" onclick="showDivs('div5')">Learn more <i class="bi bi-arrow-right"></i></button>
+              </div>
+          </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
                         <i class="fa-solid fa-smile-beam"></i>
                     </div>
-                    <h3>Young & Social</h3>
-                    <p>We have more time on our hands... Maybe</p>
-                    <button class="readmore stretched-link openModal" data-target="Young and Social" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
+                    <h3>Interest & Hobby Groups</h3>
+                    <p>For things that you are Interested in, as the name implies</p>
+                    <button class="readmore stretched-link openModal" onclick="showDivs('div6')">Learn more <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -193,330 +190,27 @@
                         <i class="fas fa-star"></i>
                       </span>
                     </div>
-                    <h3>Fabulous 50's</h3>
-                    <p>We are Fabulous As always</p>
-                    <button class="readmore stretched-link openModal" data-target="Fab 50's" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
+                    <h3>Support Groups</h3>
+                    <p>We all need help sometimes</p>
+                    <button class="readmore stretched-link openModal" onclick="showDivs('div7')">Learn more <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div><!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="service-item  position-relative">
                   <div class="icon">
-                      <i class="fas fa-cloud-moon"></i>
+                      <i class="fas fa-money-bill-wave"></i>
                   </div>
-                  <h3>Fabulous 60's</h3>
-                  <p>Because we finally have the money to do what we want.</p>
-                  <button class="readmore stretched-link openModal" data-target="Fab 60's" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
+                  <h3>Career/Professional Groups</h3>
+                  <p>For a Jumpstart/Redo in you Career life</p>
+                  <button class="readmore stretched-link openModal" onclick="showDivs('div8')">Learn more <i class="bi bi-arrow-right"></i></button>
               </div>
           </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                  <div class="icon">
-                      <i class="fa-solid fa-person"></i>
-                  </div>
-                  <h3>Single moms</h3>
-                  <p>Single and free to do what we enjoy.</p>
-                  <button class="readmore stretched-link openModal" data-target="Single moms" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                  <div class="icon">
-                      <i class="fa-solid fa-house"></i>
-                  </div>
-                  <h3>Stay at home moms</h3>
-                  <p>Cause stay at home doesnt actually mean stay at HOME</p>
-                  <button class="readmore stretched-link openModal" data-target="Stay at home moms" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-              </div>
-          </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                  <div class="icon">
-                      <i class="fa-solid fa-blind"></i>
-                  </div>
-                  <h3>Golden Gems</h3>
-                  <p>Because when the Inlaws come to visit, it's nice to get them out of my house for a bit.</p>
-                  <button class="readmore stretched-link openModal" data-target="Golden Gems" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-              </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-highlighter"></i>
-                    </div>
-                    <h3>Hobbies</h3>
-                    <p>Almost anything you can imagine</p>
-                    <button class="readmore stretched-link openModal" data-target="Hobbies" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-                </div>
-            </div><!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="fa-solid fa-plane"></i>
-                    </div>
-                    <h3>Travel Group</h3>
-                    <p>Who you travel with can be more important than your destination.</p>
-                    <button class="readmore stretched-link openModal" data-target="Travel Group" onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Learn more <i class="bi bi-arrow-right"></i></button>
-                </div>
-            </div><!-- End Service Item -->
-<div id="Pregnant Moms" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Pregnant Moms</h2></div>
-    
-      <p>Are you expecting a little one and looking for a supportive community to share this special journey? C3 Pregnant Moms is here to guide and uplift you through every stage of pregnancy. From first-trimester questions to nesting tips, this group offers a warm environment to swap experiences, gain practical advice, and celebrate milestones—no matter how big or small.</p>
-        <b>What’s in Store</b>
-        <p><b>Resource Sharing:</b> Discuss prenatal care, nutrition, exercise, and more.</p>
-        <p><b>Encouragement & Advice:</b> Get firsthand tips from fellow moms who understand the joys (and jitters) of pregnancy.</p>
-        <p><b>Friendly Meetups:</b> Bond over shared experiences through casual gatherings—whether in person or virtual.</p>
-        <p>Join C3 Pregnant Moms and experience the comfort of a supportive circle that grows with you—from bump to baby!</p>
-  </div>
-</div>
-
-<div id="Moms with kids" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Moms with kids</h2></div>
-      <h5>C3 Infant Moms</h5>
-      <h5>Little C3 Moms (3–8 Years)</h5>
-      <h5>C3 Middle School Girls (6th–8th Grade)</h5>
-      <h5>C3 High School Girls Moms Group</h5>
-      <h5>C3 Boys (Grades 3, 4, & 5)</h5>
-      <h5>C3 Boys (Grades 6, 7, & 8)</h5>
-      <h5>C3 Boys (Grades 9–12)</h5>
-      <p>All these groups are a fun, supportive space for boys and girls of all ages, getting Kids to face their one fear, socializing</p>
-  </div>
-</div>
-
-<div id="Young and Social" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Young and Social</h2></div>
-      <p>This subgroup is a warm, welcoming space for women who are married and do not have children. C3 Young & Social offers a sense of belonging for those excited to build friendships, share experiences, and create cherished memories—whether you’re focused on your career, travel, personal growth, or simply enjoying quality time as a couple. Connect with others who appreciate marriage without the parenting focus, celebrate milestones, and lift each other up through lighthearted meetups that encourage personal growth and spark new traditions. It’s all about connection, exploration, and the chance to thrive—together!</p>
-        <b> What’s in Store:</b>
-        <p><b>Shared Experiences:</b> Connect with others who appreciate the joys and day-to-day life of marriage without the parenting focus.</p>
-        <p><b>Community & Support:</b> A supportive circle for discussing personal goals, celebrating milestones, and lifting each other up.</p>
-        <p><b>thearted Gatherings:</b> Enjoy meetups tailored to your interests—balanced between fun, personal growth, and creating new traditions together.</p>
-        <p>C3 Young & Social is about connection, exploration, and support. It’s a space where women can bond over shared experiences in a vibrant space to flourish—together!</p>
-  </div>
-</div>
-<div id="error" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Oops, This is still being worked on</h2></div>
-  </div>
-</div>
-<div id="Fab 50's" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Fabulous 50's</h2></div>
-      <p>Calling all vibrant women aged 50 and above! If you’re looking for a space to share experiences, build lasting friendships, and explore new adventures, C3 50s & Fab is the perfect fit. We believe this season of life should be celebrated, and our group is all about fostering meaningful connections in a non-judgmental, supportive environment.</p>
-      <b>What’s in Store</b>
-      <p><b>Indoor & Outdoor Gatherings:</b> Enjoy everything from cozy potlucks and social get-togethers to picnics and parties.</p>
-      <p><b>Meaningful Conversations:</b> Discuss life’s changes, challenges, and joys while gaining fresh perspectives from peers who truly understand.</p>
-      <p><b>Supportive Community:</b> Share insights, offer encouragement, and find companionship in a warm, understanding circle.</p>
-      <p>Join C3 50s & Fab to embrace this chapter of life with confidence, camaraderie, and plenty of laughter—because the best is yet to come!</p>
-  </div>
-</div>
-<div id="Fab 60's" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Fabulous 60's</h2></div>
-      <p>Ready to celebrate life’s next chapter with warmth, wisdom, and a sense of adventure? C3 60s & above is your welcoming circle for women aged 60 and above. Whether you’re seeking new friendships, meaningful conversations, or simply a bit of fun, this group helps you embrace every moment with confidence and joy.</p>
-      <b>What’s in Store</b>
-      <p><b>Indoor & Outdoor Gatherings:</b> Relaxed potlucks, coffee meets, and group outings—there’s always something new to explore.</p>
-      <p><b>Shared Insights:</b> Discuss life’s changes, highlights, and reflections in an open, encouraging setting.</p>
-      <p><b>Supportive Community:</b> Celebrate milestones, exchange advice, and uplift one another every step of the way.</p>
-      <p>Join C3 60s & Fab and discover that each passing year is an invitation to find joy, stay curious, and savor life’s every moment—because there’s always something wonderful around the corner!</p>
-    </div>
-</div>
-<div id="Single moms" class="modal">
-   <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Single moms</h2></div>
-      <h5>C3 Super Single Moms</h5>
-      <h5>C3 HAPPY SINGLES</h5>
-      <h5>C3 Soul Sisters</h5>
-      <p>These group are a supportive haven for any mom who’s navigating life on her own—whether due to separation, divorce, widowhood, or any other circumstance. C3 Super Single Moms welcomes women at every stage: those just beginning the separation process, those healing from a loss, or those who’ve already embraced single motherhood.</p>
-      <b>What’s in Store</b>
-      <p><b>Shared Experiences & Support:</b> Swap personal stories, discuss challenges, and share advice on thriving as a single parent.</p>
-      <p><b>Practical Resources:</b> Discover helpful tips, references, and guidance that make single motherhood more manageable.</p>
-      <p><b>Fun Meetups:</b> Gather at homes, parks, or other local spots to unwind, socialize, and form meaningful connections.</p>
-      <p>Join C3 Super Single Moms to find friends who truly get your journey, offering support and reminding you that you’re never alone.</p>
-  </div>
-</div>
-<div id="Stay at home moms" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Stay at home moms</h2></div>
-      <p>This group is where full-time homemakers connect, share, and thrive. A caring and uplifting community for mothers dedicating themselves full-time to raising a family, running a household, and juggling countless responsibilities—all without clocking out.</p>
-      <b>What’s in Store</b>
-      <p><b>Festive Meetups:</b> Celebrate holidays and milestones and special occasions in a relaxed, fun atmosphere.</p>
-      <p><b>Chai Breaks:</b> Unwind and connect over a warm cup, sharing stories, tips, and laughter.</p>
-      <p><b>Shared Hobbies & Skills:</b> Discover and explore new hobbies or revisit old favorites—everything from cooking and crafting to fitness or reading</p>
-      <p>By joining C3 Stay-at-Home Moms, you’ll find a sisterhood that recognizes the unique challenges and rewards of this role. Together, we celebrate the power and purpose of homemaking, proving that staying at home is every bit as vital and fulfilling.</p>
-  </div>
-</div>
-</div>
-<div id="Golden Gems" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Golden Gems</h2></div>
-      <p>This group is a heartfelt space for seniors and parents visiting or living in the U.S., where they can connect, share experiences, and form meaningful friendships. The group nurtures those older parents who might feel isolated or solely dependent on their adult children to fill the void. Instead, they discover new bonds and a vibrant community that enriches their lives and fosters a sense of belonging.</p>
-      <p>Through regular meetups and shared celebrations, members create a support system that eases homesickness and helps navigate the challenges of being far from loved ones. Whether reminiscing about cherished memories, engaging in lively conversations, or celebrating cultural traditions, this group uplifts spirits and promotes overall well-being.</p>
-      <b>What’s in Store:</b>
-      <p><b> Social Gatherings:</b> Friendly meetups to share laughter, stories, and connection.</p>
-      <p><b>Cultural Celebrations:</b> Festive events to honor traditions and make new memories together.</p>
-      <p><b>Supportive Community:</b> A welcoming space for shared understanding, encouragement, and joy.</p>
-      <p>In the Golden Gems group no one is alone—friendship and connection make every day brighter.</p>
-  </div>
-</div>
-<div id="Hobbies" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Hobbies</h2></div>
-      <h5>Crafts Club</h5>
-      <h5>Garden Club</h5>
-      <h5>Karaoke</h5>
-      <h5>DANCE WITH C3</h5>
-      <h5>C3 Book Club</h5>
-      <h5>Home Decor</h5>
-      <h5>Beauty & fashion</h5>
-      <h5>C3 Throwball troop</h5>
-      <h5>C3 hikers</h5>
-      <p>These are just a few of hobby groups, There is probably a group in interest</p>
-  </div>
-</div>
-<div id="Travel Group" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <div style="text-align: center;"><h2>Travel Group</h2></div>
-      <p>This vibrant subgroup brings together women who share a passion for exploring new destinations, cultures, and adventures. Whether you’re dreaming of a solo trip, planning a family vacation, or looking for a group getaway with friends, this group is your go-to community for inspiration and practical tips</p>
-      <p>The C3 Travel Group is more than just a space to talk travel—it’s where bucket lists come to life. Here, women connect with like-minded enthusiasts, find their perfect travel buddies, and turn dream destinations into reality. Whether it’s conquering Kilimanjaro, chasing the Northern Lights, wandering through Italy’s charming villages, or exploring the markets of Marrakech, shared planning and local meetups make it easy to bring once-in-a-lifetime experiences to life. No dream is too big, no destination too far—Our C3 Travel Tribe ensures you never have to do it alone. Let’s pack our bags, find our travel sisters, and create memories that will last a lifetime!</p>
-  </div>
-</div>
-<!-- CSS Styles -->
-<style>
-  .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.5);
-  }
-
-  .modal.show {
-      display: block;
-  }
-
-  .modal-content {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 100%; /* Adjust as needed */
-    max-width: 1000px; /* Optional for responsive design */
-    margin: 15% auto; /* Center vertically */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    position: relative;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-  .close {
-      color: red;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-  }
-
-  .close:hover {
-      color: darkred;
-  }
-</style>
-
-<!-- JavaScript Functionality -->
-<script>
-document.querySelectorAll('.openModal').forEach(button => {
-    button.addEventListener('click', function() {
-        const targetModalId = this.getAttribute('data-target');
-        const modal = document.getElementById(targetModalId);
-        if (modal) {
-            modal.classList.add('show');
-        }
-    });
-});
-
-document.querySelectorAll('.modal .close').forEach(closeBtn => {
-    closeBtn.addEventListener('click', function() {
-        this.closest('.modal').classList.remove('show');
-    });
-});
-
-window.addEventListener('click', function(event) {
-    document.querySelectorAll('.modal').forEach(modal => {
-        if (event.target === modal) {
-            modal.classList.remove('show');
-        }
-    });
-});
-
-
-  // Open modal
-  openModalButtons.forEach(button => {
-      button.addEventListener("click", function(event) {
-          const modalId = this.getAttribute("data-target");
-          const modal = document.getElementById(modalId);
-          const modalContent = modal.querySelector(".modal-content");
-          const buttonRect = this.getBoundingClientRect();
-
-          modal.classList.add("show");
-
-          // Align modal with button
-          modalContent.style.top = `${buttonRect.top + window.scrollY}px`;
-      });
-  });
-
-  // Close modal on 'x' click
-  closeButtons.forEach(button => {
-      button.addEventListener("click", function() {
-          this.closest('.modal').classList.remove("show");
-          document.body.style.overflow = 'auto'; // Re-enable background scroll
-      });
-  });
-
-  // Close modal when clicking outside the modal content
-  window.addEventListener("click", function(event) {
-      modals.forEach(modal => {
-          if (event.target === modal) {
-              modal.classList.remove("show");
-              document.body.style.overflow = 'auto'; // Re-enable background scroll
-          }
-      });
-  });
-</script>
-
-
         </div>
 
       </div>
     </section><!-- End Services Section -->
+
+    
 
     <!-- ======= Alt Services Section ======= -->
     <!--<section id="alt-services" class="alt-services">
@@ -1080,6 +774,588 @@ window.addEventListener('click', function(event) {
 
   </main><!-- End #main -->
 
+  <!-- Main Hidden section-->
+  <section>
+    <div id="div1" class="hidden">
+      <h2>Main Groups</h2>
+      <p>These dynamic main groups are built on the foundation of fun, friendship and shared values. With 10 specialized groups, C3 ensures that every member finds a supportive space to connect, grow and thrive. Through engaging events, meaningful conversations, and one-on-one meetups, we foster a strong sense of belonging, empowerment, and cultural connection, making every interaction a truly enriching experience</p>
+        <p>C3 GROUP 1</p>
+        <p>C3 GROUP 2</p>
+        <p>C3 GROUP 3</p>
+        <p>C3 GROUP 4</p>
+        <p>C3 GROUP 5</p>
+        <p>C3 GROUP 6</p>
+        <p>C3 GROUP 7</p>
+        <p>C3 GROUP 8</p>
+        <p>C3 GROUP 9</p>
+        <p>C3 GROUP 10</p>
+      <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="div2" class="hidden">
+      <h2>Location Based groups</h2>
+      <p>Looking for a fun and welcoming space to meet like-minded people? This community is all about connecting, socializing, and building friendships based on shared interests and locations.</p>
+      <h3>What’s in Store</h3>
+      <ul>
+          <li>Chai & Chats – Bond over laughter and great conversations.</li>
+          <li>Local Adventures – Explore sports, events, and activities together.</li>
+          <li>Support & Friendship – Lift each other up in meaningful ways.</li>
+      </ul>
+      <p>C3 PROSPER</p>
+      <p>C3 IRVING</p>
+      <p>C3 GARLAND / RICHARDSON/WYLIE</p>
+      <p>C3 MELISSA</p>
+      <p>C3 KELLER/ROANOKE/FLOWERMOUND</p>
+      <div>
+        <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+      </div> 
+    </div>
+    <div id="div3" class="hidden">
+      <h2>Health & Fitness groups</h2>
+      <p>If fitness is your passion, C3 Fitness is your squad! This group brings together individuals who want to make staying active a fun, social experience—whether it's hiking, dancing at Zumba, or enjoying a post-workout coffee.</p>
+      <h3>What’s in Store</h3>
+      <ul>
+          <li>Group Workouts: Join in on walks, hikes, and fitness classes with a supportive community.</li>
+          <li>Social Vibes: Meet up for coffee, potlucks, and milestone celebrations to bond.</li>
+          <li>Motivation & Goals: Stay on track with fitness goals while cheering each other on.</li>
+      </ul>
+      <p>C3 FITNESS-MCKINNEY</p>
+      <p>C3 FITNESS -PLANO</p>
+      <p>C3 FITNESS - ALLEN</p>
+      <p>C3 FITNESS- FRISCO</p>
+      <p>C3 FITNESS - PROSPER</p>
+      <p>C3 FITNESS- IRVING</p>
+      <p>C3 THROWBALL</p>
+      <p>C3 HIKING</p>
+      <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="div4" class="hidden">
+      <h2>Moms & Kids Groups</h2>
+      <p><button onclick="showDivs(['div9'])">C3 INFANT MOMS</button></p>
+      <p><button onclick="showDivs(['div10'])">C3 Kids 3-8</button></p>
+      <p><button onclick="showDivs(['div11'])">C3 ELEMENTARY Girls</button></p>
+      <p><button onclick="showDivs(['div12'])">C3 MIDDLE SCHOOL GIRLS</button></p>
+      <p><button onclick="showDivs(['div13'])">C3 HIGH SCHOOL GIRLS</button></p>
+      <p><button onclick="showDivs(['div14'])">C3 3,4,5 GRADE BOYS</button></p>
+      <p><button onclick="showDivs(['div15'])">C3 6,7,8 GRADE BOYS</button></p>
+      <p><button onclick="showDivs(['div16'])">C3 9,10,11,12 GRADE BOYS</button></p>
+      <p><button onclick="showDivs(['div17'])">C3 MOMS WITH ADULT KIDS</button></p>
+      <p><button onclick="showDivs(['div18'])">C3 STAY AT HOME MOMS</button></p>
+      <p><button onclick="showDivs(['div19'])">C3 FAB 50's</button></p>
+      <p><button onclick="showDivs(['div20'])">C3 FAB 60's</button></p>
+      <p><button onclick="showDivs(['div21'])">C3 GOLDEN GEMS</button></p>
+      <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="div5" class="hidden">
+      <h2>Young Ladies</h2>
+      <p>C3 RISE & SHINE TRIBE 18-24</p>
+      <p>C3 YOUNG LADIES 25-30</p>
+      <p>C3 YOUNG & SOCIAL [Married]</p>
+      <p>A group for young adult ladies to connect, grow, and navigate life’s transitions in a supportive and uplifting environment.</p>
+      <h3>What’s in Store</h3>
+      <ul>
+          <li>Meaningful discussions and personal development.</li>
+          <li>Opportunities to build community and leadership skills.</li>
+          <li>Social outings, Game nights, Coffee meetups, ect.</li>
+      </ul>
+      <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="div6" class="hidden">
+      <h2>Interest & Hobby Groups</h2>
+      <p><button onclick="showDivs(['div22'])">C3 CRAFTS</button></p>
+      <p><button onclick="showDivs(['div23'])">C3 GARDEN CLUB</button></p>
+      <p><button onclick="showDivs(['div24'])">C3 HOME DECOR</button></p>
+      <p><button onclick="showDivs(['div25'])">C3 KAROAKE</button></p>
+      <p><button onclick="showDivs(['div26'])">C3 BEAUTY & FASHION</button></p>
+      <p><button onclick="showDivs(['div27'])">DANCE WITH C3</button></p>
+      <p><button onclick="showDivs(['div28'])">C3 BOOK CLUB</button></p>
+      <p><button onclick="showDivs(['div29'])">C3 BIRTHDAYS</button></p>
+      <p><button onclick="showDivs(['div30'])">C3 MOVIES</button></p>
+      <p><button onclick="showDivs(['div31'])">C3 PLAYING CARDS</button></p>
+      <p><button onclick="showDivs(['div32'])">C3 FOODIES</button></p>
+      <p><button onclick="showDivs(['div33'])">C3 TRAVEL</button></p>
+      <p><button onclick="showDivs(['div34'])">C3 PET LOVERS</button></p>
+      <p><button onclick="showDivs(['div35'])">C3 LOCAL EVENTS</button></p>
+      <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="div7" class="hidden">
+      <h2>Support groups</h2>
+      <p><button onclick="showDivs(['div36'])">C3 SPECIAL NEEDS LOVELIES</button></p>
+      <p><button onclick="showDivs(['div37'])">C3 PREGNANT MOMS</button></p>
+      <p><button onclick="showDivs(['div38'])">C3 SINGLE MOMS</button></p>
+      <p><button onclick="showDivs(['div39'])">C3 HAPPY SINGLES</button></p>
+      <p><button onclick="showDivs(['div40'])">C3 SOUL SISTERS</button></p>
+      <p><button onclick="showDivs(['div41'])">C3 CANCER CONQUERERS</button></p>
+      <p><button onclick="showDivs(['div42'])">C3 INFERTILITY SUPPORT</button></p>
+      <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div id="div8" class="hidden">
+      <h2>Career/Professional groups</h2>
+      <p><button onclick="showDivs(['div43'])">C3 WORK FROM HOME</button></p>
+      <p><button onclick="showDivs(['div44'])">C3 NON IT JOB OPPORTUNITIES</button></p>
+      <p><button onclick="showDivs(['div45'])">C3 IT JOB OPPORTUNITIES</button></p>
+      <p><button onclick="showDivs(['div49'])">C3 - NEWSLETTER TEAM</button></p>
+    <button onclick="showDivs(['main' , 'hero', 'footer'])">Go Back<i class="bi bi-arrow-right"></i></button>
+    </div>
+    
+    <!-- Sub group hidden section -->
+   <div id="div9" class="hidden">
+    <h2>C3 INFANT MOMS</h2>
+    <p>A nurturing space for new moms with babies aged birth to 3 years old, C3 Infant Moms is where you’ll find advice, empathy, and encouragement on everything from sleepless nights to first steps. We understand that life with little ones is full of surprises, so our get-togethers are flexible and baby-friendly—come when you can, stay as long as everyone’s happy, and connect with moms who truly get it.</p>
+    <p>What’s in Store
+    <ul>
+      <li>Shared Tips & Tricks: Sleep schedules, feeding challenges, and the joys of first milestones.</li>
+      <li>Supportive Meetups: Casual gatherings (when the kids are feeling well!) for socializing, playtime, and much-needed adult conversation.</li>
+      <li>Friendly Community: Build lasting bonds and help each other navigate these precious yet sometimes overwhelming early years.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div> 
+   <div id="div10" class="hidden">
+    <h2>C3 KIDS 3-8 yrs</h2>
+    <h2>Welcome to Little C3 Moms</h2>
+    <p>A welcoming space for moms of children aged 3 to 8, <strong>Little C3 Moms</strong> is all about fun, growth, and friendship. We bring families together for social activities that help kids explore their talents, stay active, and make new friends—while moms swap tips, ideas, and support.</p>
+    
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Playtime Adventures: Visits to parks, libraries, and other kid-friendly attractions to boost physical and social skills.</li>
+        <li>Arts & Crafts: Creative sessions that spark imagination and develop fine motor skills.</li>
+        <li>Movies & More: Casual movie meetups for family bonding.</li>
+        <li>Resource Sharing: Recommendations for schools, doctors, lunch ideas, hobby classes, and more.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div11" class="hidden">
+    <h2>C3 ELEMENTARY GIRLS</h2>
+    <p>A supportive space for elementary school girls to connect, learn, and grow through engaging activities and social gatherings.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Monthly meetups and group activities.</li>
+        <li>Encouraging friendships and social skills.</li>
+        <li>Opportunities for learning and fun.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div12" class="hidden">
+    <h2>C3 MIDDLE SCHOOL GIRLS</h2>
+    <p>A fun, supportive space for middle school girls and their moms to socialize, learn, and grow together.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Monthly meetups for bonding and socializing.</li>
+        <li>Social events and fun outings.</li>
+        <li>Opportunities for mentorship and peer support.</li>
+        <li>Beauty & Health related Workshops</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div13" class="hidden">
+    <h2>C3 HIGH SCHOOL GIRLS</h2>
+    <p>A welcoming group for high school girls to build friendships, support each other, and engage in activities that promote confidence and growth.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Academic and career guidance.</li>
+        <li>Confidence-building activities and discussions.</li>
+        <li>Social and networking opportunities.</li>
+        <li>Beauty & Health related Workshops</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div14" class="hidden">
+    <h2>C3 3,4,5 GRADE BOYS</h2>
+    <p>A dynamic, engaging community where young boys can learn, play, and make new friends.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Educational and recreational activities.</li>
+        <li>Friendship-building social events.</li>
+        <li>Interactive learning and fun experiences.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div15" class="hidden">
+    <h2>C3 6,7,8 GRADE BOYS</h2>
+    <p>A group for middle school boys to engage in activities that encourage learning, social skills, and personal development.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Hands-on learning experiences.</li>
+        <li>Opportunities to build confidence and teamwork.</li>
+        <li>Supportive community for personal growth.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div16" class="hidden">
+    <h2>C3 9,10,11,12 GRADE BOYS</h2>
+    <p>A supportive space for high school boys to navigate friendships, academics, and personal growth together.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Mentorship and leadership-building activities.</li>
+        <li>Volunteer and career exploration opportunities.</li>
+        <li>Social and networking events.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div17" class="hidden">
+    <h2>C3 MOMS WITH ADULT KIDS</h2>
+    <p>This group is for parents whose children have left or are about to leave for college (or otherwise become independent). When the kids head off to college, it might feel like the end of an era—but it’s also the start of a new journey! C3 Adventure Awaits is a welcoming community for parents stepping into the empty-nest stage.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Shared Insights: Hear from those who’ve successfully navigated this transition, learn coping strategies, and discover fresh possibilities.</li>
+        <li>Balanced Living: Explore ways to stay connected with your kids while cultivating personal interests and goals.</li>
+        <li>Encouraging Community: Connect with peers who understand the mix of excitement and uncertainty that comes with a quieter home.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div18" class="hidden">
+    <h2>C3 STAY AT HOME MOMS</h2>
+    <p>This group is where full-time homemakers connect, share, and thrive. A caring and uplifting community for mothers dedicating themselves full-time to raising a family, running a household, and juggling countless responsibilities—all without clocking out.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Festive Meetups: Celebrate holidays and milestones and special occasions in a relaxed, fun atmosphere.</li>
+        <li>Chai Breaks: Unwind and connect over a warm cup, sharing stories, tips, and laughter.</li>
+        <li>Shared Hobbies & Skills: Discover and explore new hobbies or revisit old favorites—everything from cooking and crafting to fitness or reading.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div19" class="hidden">
+    <h2>C3 FAB 50's</h2>
+    <p>Calling all vibrant women aged 50 and above! If you’re looking for a space to share experiences, build lasting friendships, and explore new adventures, C3 50s & Fab is the perfect fit.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Indoor & Outdoor Gatherings: Enjoy everything from cozy potlucks and social get-togethers to picnics and parties.</li>
+        <li>Meaningful Conversations: Discuss life’s changes, challenges, and joys while gaining fresh perspectives from peers who truly understand.</li>
+        <li>Supportive Community: Share insights, offer encouragement, and find companionship in a warm, understanding circle.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div20" class="hidden">
+    <h2>C3 FAB 60's</h2>
+    <p>Ready to celebrate life’s next chapter with warmth, wisdom, and a sense of adventure? C3 60s & Fab is your welcoming circle for women aged 60 and above.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Indoor & Outdoor Gatherings: Relaxed potlucks, coffee meets, and group outings—there’s always something new to explore.</li>
+        <li>Shared Insights: Discuss life’s changes, highlights, and reflections in an open, encouraging setting.</li>
+        <li>Supportive Community: Celebrate milestones, exchange advice, and uplift one another every step of the way.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div21" class="hidden">
+    <h2>C3 GOLDEN GEMS</h2>
+    <p>This group is a heartfelt space for seniors and parents visiting or living in the U.S., where they can connect, share experiences, and form meaningful friendships. The group nurtures those older parents who might feel isolated or solely dependent on their adult children to fill the void. Instead, they discover new bonds and a vibrant community that enriches their lives and fosters a sense of belonging.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Social Gatherings: Friendly meetups to share laughter, stories, and connection.</li>
+        <li>Cultural Celebrations: Festive events to honor traditions and make new memories together.</li>
+        <li>Supportive Community: A welcoming space for shared understanding, encouragement, and joy.</li>
+    </ul>
+    <button onclick="showDivs(['div4'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div22" class="hidden">
+    <h2>C3 CRAFTS</h2>
+    <p>Calling all craft enthusiasts, beginners, and experts alike! Welcome to C3 Crafts, a vibrant group dedicated to the joy of crafting. Whether you’re looking to learn a new skill, share your expertise, or simply enjoy the creative process, this is the perfect space for you.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Learn new crafts through workshops and tutorials.</li>
+        <li>Master and refine your favorite crafting techniques.</li>
+        <li>Collaborate on fun, creative projects in a supportive environment.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div23" class="hidden">
+    <h2>C3 GARDEN CLUB</h2>
+    <p>If you have a green thumb or are passionate about nurturing homegrown produce and plants, C3 Garden Club is the perfect place to connect with fellow enthusiasts!</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Seed Exchanges: Discover unique varieties and trade favorites with fellow gardeners.</li>
+        <li>Hands-On Meetups: Get together for planting sessions, greenhouse tours, or garden walks.</li>
+        <li>Community Support: Share successes, troubleshoot challenges, and celebrate harvests—big or small.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div24" class="hidden">
+    <h2>C3 HOME DECOR</h2>
+    <p>A space for home decor lovers to share ideas, get inspired, and create beautiful living spaces.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Decor Inspiration: Get ideas and tips for refreshing your home.</li>
+        <li>DIY Projects: Learn creative ways to personalize your space.</li>
+        <li>Community Sharing: Exchange recommendations on decor trends and shopping finds.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div25" class="hidden">
+    <h2>C3 KARAOKE</h2>
+    <p>Ever dreamed of singing on stage but never had the chance? Whether you're a seasoned singer or just curious to try singing, C3 Karaoke is the perfect place to bring your vocal cords to life.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Karaoke Events: Monthly gatherings where we sing, enjoy, and make memories.</li>
+        <li>All Skill Levels Welcome: Whether you hit every note or just want to try a note, the stage is yours!</li>
+        <li>Supportive Community: No judgment, just encouragement—lots of fun!</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div26" class="hidden">
+    <h2>C3 BEAUTY & FASHION</h2>
+    <p>A group for beauty and fashion lovers who enjoy exploring trends, sharing tips, and expressing themselves through style.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Beauty Tips: Learn and share skincare, makeup, and hair care routines.</li>
+        <li>Fashion Trends: Stay updated on the latest styles and outfit inspirations.</li>
+        <li>Shopping & Styling: Get advice on shopping finds and personal styling.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div27" class="hidden">
+    <h2>DANCE WITH C3</h2>
+    <p>Where the beat is always calling, and the energy never stops! C3 Dance brings together women who share a passion for dance. Whether you’re a total beginner or have been dancing for years, you’ll find a place here to express yourself, stay active, and meet amazing friends.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Monthly Meetups: Gatherings to fine-tune your skills, pick up fresh routines, and boost confidence.</li>
+        <li>Performance Opportunities: Showcase your moves at C3’s signature events.</li>
+        <li>Collaborative Choreography: Put your creative spin on group performances.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div28" class="hidden">
+    <h2>C3 BOOK CLUB</h2>
+    <p>Calling all bookworms and literary explorers! If you love dissecting plotlines, debating character motivations, and exploring unique writing styles, C3 Book Club is for you!</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Monthly Book Discussions: Dive deep into classics, bestsellers, and hidden gems.</li>
+        <li>Exchange Recommendations: Discover new reads and share your literary favorites.</li>
+        <li>Community Engagement: Connect with fellow book lovers over thought-provoking discussions.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div29" class="hidden">
+    <h2>C3 BIRTHDAYS</h2>
+    <p>At C3 Birthdays, every birthday is a reason to celebrate! This group is dedicated to making sure no special day goes unnoticed. Each month, we gather at a restaurant to honor and celebrate the birthdays of our members born that month—because every woman deserves to feel cherished on her big day.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Monthly Birthday Gatherings: Celebrate with fellow members over great food and company.</li>
+        <li>Special Recognition: Make every birthday feel special and memorable.</li>
+        <li>Fun & Festivities: Enjoy themed parties, laughter, and lasting friendships.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div30" class="hidden">
+    <h2>C3 MOVIES</h2>
+    <p>Are you a movie buff who craves the thrill of the first-day-first-show experience? Or do you long to relive the classics you grew up watching? Welcome to C3 Movies, the ultimate group for film enthusiasts!</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Movie Meetups: Watch the latest blockbusters, indie gems, and cult classics together.</li>
+        <li>Home Screenings: Cozy movie nights with themed discussions and popcorn.</li>
+        <li>Lively Debates: Share your thoughts, critique films, and geek out over cinema.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div31" class="hidden">
+    <h2>C3 PLAYING CARDS</h2>
+    <p>Love a good game night? C3 Playing Cards is a welcoming group for anyone who enjoys the thrill of card games and friendly competition. Whether you’re a pro or a beginner, there’s a seat at the table for you!</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Game Nights: Enjoy classics like Poker, Rummy, Uno, and more.</li>
+        <li>Strategy & Fun: Learn new games and improve your skills.</li>
+        <li>Social Connection: Meet new friends and enjoy an evening of laughter and play.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div32" class="hidden">
+    <h2>C3 FOODIES</h2>
+    <p>This is one of the most active subgroups in C3 because, let’s be honest—food brings people together like nothing else! Whether you’re a fan of street food, fine dining, or home-cooked meals, C3 Foodies is your go-to group.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Restaurant Meetups: Explore new food spots and hidden gems.</li>
+        <li>Recipe Exchanges: Share and discover delicious home-cooked meals.</li>
+        <li>Food Adventures: Join themed potlucks, tastings, and food festivals.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div33" class="hidden">
+    <h2>C3 TRAVEL</h2>
+    <p>If wanderlust is in your soul, C3 Travel is your tribe! This group connects women who love to explore new destinations, cultures, and adventures—whether solo, with family, or with travel buddies.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Travel Planning: Get tips, share itineraries, and plan trips together.</li>
+        <li>Group Getaways: Organize trips and create lifelong memories.</li>
+        <li>Bucket List Inspiration: Exchange travel stories and recommendations.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div34" class="hidden">
+    <h2>C3 PET LOVERS</h2>
+    <p>The C3 Pet Lovers group is a lively and welcoming community of women united by their love for animals. Whether you have a dog, cat, bird, or reptile, this is the place to share tips, stories, and resources.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Pet Playdates: Socialize with fellow pet parents and their furry friends.</li>
+        <li>Training & Care Tips: Exchange advice on grooming, training, and vet recommendations.</li>
+        <li>Heartwarming Stories: Share funny, touching, and inspiring pet moments.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div35" class="hidden">
+    <h2>C3 LOCAL EVENTS</h2>
+    <p>Want to experience the best events in town but need the right company? C3 Local Events is all about bringing together like-minded women to attend concerts, fairs, cultural festivals, and more!</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Concerts & Shows: Find friends to attend live performances with.</li>
+        <li>Seasonal Festivities: Join in on state fairs, holiday light tours, and more.</li>
+        <li>Spontaneous Outings: Stay updated on what’s happening and never miss out on the fun.</li>
+    </ul>
+    <button onclick="showDivs(['div6'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div36" class="hidden">
+    <h2>C3 SPECIAL NEEDS LOVELIES</h2>
+    <p>This C3 group is a supportive haven for moms walking unique paths with their children, offering strength, understanding, and solidarity. It’s a space to rise above societal challenges, foster awareness, and celebrate every child’s uniqueness.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Supportive Meetups: Regular gatherings to share, learn, and build lasting friendships.</li>
+        <li>Awareness and Advocacy: Empowering members to foster understanding and break barriers in their communities.</li>
+        <li>Joyful Connections: Opportunities to unwind, laugh, and create memories with like-minded moms.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div37" class="hidden">
+    <h2>C3 PREGNANT MOMS</h2>
+    <p>Are you expecting a little one and looking for a supportive community to share this special journey? C3 Pregnant Moms is here to guide and uplift you through every stage of pregnancy.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Resource Sharing: Discuss prenatal care, nutrition, exercise, and more.</li>
+        <li>Encouragement & Advice: Get firsthand tips from fellow moms who understand the joys (and jitters) of pregnancy.</li>
+        <li>Friendly Meetups: Bond over shared experiences through casual gatherings—whether in person or virtual.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div38" class="hidden">
+    <h2>C3 SINGLE MOMS</h2>
+    <p>This group is a supportive haven for any mom who’s navigating life on her own—whether due to separation, divorce, widowhood, or any other circumstance.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Shared Experiences & Support: Swap personal stories, discuss challenges, and share advice on thriving as a single parent.</li>
+        <li>Practical Resources: Discover helpful tips, references, and guidance that make single motherhood more manageable.</li>
+        <li>Fun Meetups: Gather at homes, parks, or other local spots to unwind, socialize, and form meaningful connections.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div39" class="hidden">
+    <h2>C3 HAPPY SINGLES</h2>
+    <p>Looking to connect with others in a similar life stage—single, divorced, or in the process of separation? C3 Happy Singles is all about forming genuine friendships, sharing experiences, and having fun together.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Casual Hangouts: Potlucks, backyard grilling, and picnic outings.</li>
+        <li>Social Events: Restaurant trips, night club outings, and game nights.</li>
+        <li>Support & Exchange: Sharing personal stories, discussing healing strategies, and uplifting one another.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div40" class="hidden">
+    <h2>C3 SOUL SISTERS</h2>
+    <p>C3 Soul Sisters is a nurturing community of women who have experienced the loss of their partners, offering solace, strength, and hope.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Healing Conversations: Insights, advice, and encouragement for those navigating grief.</li>
+        <li>Emotional Support: A space to discuss anniversaries, special dates, and daily challenges.</li>
+        <li>Celebrating Life & Legacy: Honoring the past while embracing the future, together.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div41" class="hidden">
+    <h2>C3 CANCER CONQUERORS</h2>
+    <p>A close-knit community of women navigating cancer or those who have faced it and emerged stronger. C3 Cancer Conquerors is all about celebrating victories, sharing experiences, and offering unwavering support.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Shared Journeys: Exchange experiences, coping strategies, and personal triumphs.</li>
+        <li>Encouragement & Strength: Inspire each other with stories of resilience.</li>
+        <li>Ongoing Support: Provide practical resources and emotional backing.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+
+   <div id="div42" class="hidden">
+    <h2>C3 INFERTILITY SUPPORT</h2>
+    <p>A caring, understanding community for women navigating infertility, offering a safe space to share emotions, discover coping strategies, and find strength in shared experiences.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Share Experiences: Exchange personal stories, lessons learned, and emotional journeys.</li>
+        <li>Suggest Ideas: Explore information, self-care routines, and reputable resources.</li>
+        <li>Empower & Enable: Uplift one another with practical advice, empathy, and genuine support.</li>
+    </ul>
+    <button onclick="showDivs(['div7'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   <div id="div43" class="hidden">
+    <h2>C3 WORK FROM HOME</h2>
+    <p>Welcome to the Work from Home Group – where remote work doesn’t mean feeling remote! Say goodbye to isolation and hello to connection.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Break the isolation of working from home and feel part of a supportive community.</li>
+        <li>Share lunch ideas, productivity hacks, and creative inspiration.</li>
+        <li>Meet up virtually or in person for coffee, lunch, or brainstorming sessions.</li>
+    </ul>
+    <button onclick="showDivs(['div8'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div44" class="hidden">
+    <h2>C3 NON-IT JOB OPPORTUNITIES</h2>
+    <p>A group dedicated to helping members find and share non-IT job opportunities, career advice, and networking opportunities.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Job postings and career resources.</li>
+        <li>Resume and interview tips.</li>
+        <li>Networking and mentorship opportunities.</li>
+    </ul>
+    <button onclick="showDivs(['div8'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div45" class="hidden">
+    <h2>C3 IT JOB OPPORTUNITIES</h2>
+    <p>A community for IT professionals to share job opportunities, industry insights, and career growth strategies.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Job referrals and postings in the IT field.</li>
+        <li>Technical skill development and certification guidance.</li>
+        <li>Networking with IT professionals and recruiters.</li>
+    </ul>
+    <p>C3 BUSINESS ANALYST/ PRODUCT OWNER/SCRUM</p>
+    <p>C3 AUTOMATION TESTING JOBS</p>
+    <P>C3 CLOUD CERTIFICATION</P>
+    <p>C3 SALESFORCE KNOWLEDGE SHARING</p>
+    <button onclick="showDivs(['div8'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+   
+   <div id="div49" class="hidden">
+    <h2>C3 - NEWSLETTER TEAM</h2>
+    <p>Calling all wordsmiths, storytellers, and creative minds! Join the Newsletter Team and be the voice of our vibrant community.</p>
+    <h3>What’s in Store</h3>
+    <ul>
+        <li>Highlight exciting events and meetups from our main groups and sub-groups.</li>
+        <li>Celebrate members’ professional achievements, certifications, and milestones.</li>
+        <li>Craft engaging content that keeps our community informed, inspired, and connected.</li>
+    </ul>
+    <button onclick="showDivs(['div8'])">Go Back<i class="bi bi-arrow-right"></i></button>
+   </div>
+  </section>
+  
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -1090,12 +1366,12 @@ window.addEventListener('click', function(event) {
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>Chai and Chit Chat(C3)</h3>
-              <!--<p>
+              <!-- <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
                 <strong>Phone:</strong> +1 5589 55488 55<br>
                 <strong>Email:</strong> info@example.com<br>
-              </p>-->
+              </p> -->
               <div class="social-links d-flex mt-3">
                 <a href="https://www.facebook.com/groups/310194024089084" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.linkedin.com/groups/14134573/" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
@@ -1103,7 +1379,7 @@ window.addEventListener('click', function(event) {
             </div>
           </div><!-- End footer info column-->
 
-          <!--<div class="col-lg-2 col-md-3 footer-links">
+          <!-- <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><a href="#">Home</a></li>
@@ -1131,7 +1407,7 @@ window.addEventListener('click', function(event) {
               <li><a href="#">Molestiae accusamus iure</a></li>
               <li><a href="#">Excepturi dignissimos</a></li>
               <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
+              <li><a           href="#">Dilecta</a></li>
               <li><a href="#">Sit quas consectetur</a></li>
             </ul>
           </div>--><!-- End footer links column-->
@@ -1145,12 +1421,11 @@ window.addEventListener('click', function(event) {
               <li><a href="#">Trodelas</a></li>
               <li><a href="#">Flexo</a></li>
             </ul>
-          </div>--><!-- End footer links column-->
+          </div>--><!-- End footer links column -->
 
         </div>
       </div>
     </div>
-
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
@@ -1185,6 +1460,34 @@ window.addEventListener('click', function(event) {
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Hide script-->
+  <script>
+    let lastScroll = 0;
+
+    function showDivs(divIds) {
+        if (!Array.isArray(divIds)) {
+            divIds = [divIds]; // Convert a single string into an array
+        }
+
+        // Hide all divs
+      const allDivs = [
+        'hero',
+        'main',
+        'footer',
+        'div1', 'div2', 'div3', 'div4', 'div5', 'div6', 'div7', 'div8', 'div9', 'div10',
+        'div11', 'div12', 'div13', 'div14', 'div15', 'div16', 'div17', 'div18', 'div19', 'div20',
+        'div21', 'div22', 'div23', 'div24', 'div25', 'div26', 'div27', 'div28', 'div29', 'div30',
+        'div31', 'div32', 'div33', 'div34', 'div35', 'div36', 'div37', 'div38', 'div39', 'div40',
+        'div41', 'div42', 'div43', 'div44', 'div45', 'div49'
+        ];
+        allDivs.forEach(id => document.getElementById(id).classList.add('hidden')); // Hide all
+        divIds.forEach(id => document.getElementById(id).classList.remove('hidden')); // Show selected divs
+      
+        document.getElementById("target-section").scrollIntoView({block: "start" });
+        
+    }
+  </script>
+</div>
 </body>
 
 </html>
