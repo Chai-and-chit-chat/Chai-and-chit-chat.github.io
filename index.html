@@ -4,22 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-      .fade {
-          opacity: 1;
-          transition: opacity 0.5s ease;
-      }
-      .hidden {
-          display: none; /* Hide elements completely */
-      }
-      .container {
-          margin-top: 10px;
-      }
-  </style>
+<style>
+  .fade {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.hidden {
+    display: none; /* Hide elements completely */
+}
+.container {
+    margin-top: 10px;
+}
+</style>
   <title>Chai and Chit Chat</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!--Css scripts-->
+  <style>
+  @media (max-width: 1000px) { /* Adjust 768px as needed */
+    .hide-on-mobile {
+        display: none;
+    }
+}
+</style>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -99,11 +107,11 @@
                 </div>
           </div>
 
-          <div class="col-lg-5" data-aos="fade">
+          <div class="col-lg-5 hide-on-mobile" data-aos="fade">
           <img src="assets/img/4.png" alt="Image" width="480" height="360">
           <img src="assets/img/24.png" alt="Image" width="480" height="360">
           <img src="assets/img/32.png" alt="Image" width="480" height="360">
-                </div>
+          </div>
 
               </div>
             </form>
